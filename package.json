@@ -1,0 +1,23 @@
+{
+  "name": "maquette",
+  "version": "1.0.0",
+  "description": "выпускная работа с курса Академия верстки, ВЕБ-СТАРТ 2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex3287/maquette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex3287/maquette/issues"
+  },
+  "homepage": "https://github.com/alex3287/maquette#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
