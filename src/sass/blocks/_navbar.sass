@@ -3,6 +3,10 @@
   box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
   opacity: 0.9
   height: 55px
+  position:
+  top: 0px
+  position: fixed
+  width: 100%
   &-block
     display: flex
     justify-content: space-between
@@ -19,7 +23,12 @@
   &__link  
     text-decoration: underline
     font-size: 14px
-  
+    color: $text-color
+    &:hover
+      cursor: pointer
+      border-bottom: 4px solid grey
+      text-decoration: none
+ 
 .call    
   display: flex
   flex-direction: column
@@ -27,3 +36,68 @@
   &__phone
     display: block
     font-size: 17px
+
+// тут начинается бургер меню
+.menu__icon 
+    display: none
+    width: 45px
+    height: 35px
+    position: relative
+    cursor: pointer
+
+
+.menu__icon span 
+    display: block
+    position: absolute
+    height: 5px
+    width: 100%
+    background: #333333
+    border-radius: 9px
+    opacity: 1
+    left: 0
+    transform: rotate(0deg)
+    transition: .25s ease-in-out
+
+
+.menu__icon span:nth-child(1) 
+    top: 10px
+
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) 
+    top: 23px
+
+
+.menu__icon span:nth-child(4) 
+    top: 36px
+
+
+
+@media (max-width: 992px)
+
+  .menu__icon
+    display: inline-block
+  
+  .menu__item 
+    position: fixed
+    display: block
+    top: 
+    right: 0
+    left: 0
+    margin-top: 52px
+    background-color: rgba(0, 0, 0, 0.8)
+    z-index: 1000
+    overflow: auto
+  
+  .menu__link
+    display: none
+    // display: block
+    // padding: 10px 0
+    // text-align: center
+    // color: #ffffff
+
+
+@media (max-width:580px)
+  .navbar
+      &-block
+        //flex-direction: column
+        
