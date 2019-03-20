@@ -1,4 +1,5 @@
 .layouts
+  padding-bottom: 32px
   &__title
     text-align: center
     //реализация зеленой линии
@@ -13,12 +14,43 @@
   &__subtitle
     display: block
     text-align: center
+    margin-bottom: 79px
 .card
-  //flex-basis: 33%
+  width: 370px
+  height: 680px
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: $text_2-color
+  border: 1px solid red
+  position: relative
+  margin-bottom: 30px
+  &__image
+    margin-top: 24px
+    margin-bottom: 35px
+    width: 300px
   &__text
     width: 234px
+  &__button
+    position: absolute
+    bottom: 40px
+    left: 70px
+    width: 230px
+    background-color: $text_2-color
+    color: $text-color
   &s
     display: flex
     flex-wrap: wrap
     justify-content: space-around
 
+@media (max-width: 580px)
+  .card
+    width: 280px
+    height: 530px
+    &__image
+      width: 250px
+    &__button
+      width: 200px
+      left: 39px
+      bottom: 15px
+  

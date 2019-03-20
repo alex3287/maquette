@@ -432,6 +432,7 @@ img {
   height: 55px;
   top: 0px;
   position: fixed;
+  z-index: 999;
   width: 100%;
 }
 
@@ -667,6 +668,10 @@ img {
   }
 }
 
+.layouts {
+  padding-bottom: 32px;
+}
+
 .layouts__title {
   text-align: center;
 }
@@ -674,10 +679,45 @@ img {
 .layouts__subtitle {
   display: block;
   text-align: center;
+  margin-bottom: 79px;
+}
+
+.card {
+  width: 370px;
+  height: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border: 1px solid red;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card__image {
+  margin-top: 24px;
+  margin-bottom: 35px;
+  width: 300px;
 }
 
 .card__text {
   width: 234px;
+}
+
+.card__button {
+  position: absolute;
+  bottom: 40px;
+  left: 70px;
+  width: 230px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .cards {
@@ -688,6 +728,25 @@ img {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 580px) {
+  .card {
+    width: 280px;
+    height: 530px;
+  }
+  .card__image {
+    width: 250px;
+  }
+  .card__button {
+    width: 200px;
+    left: 39px;
+    bottom: 15px;
+  }
+}
+
+.projects {
+  background-color: #e8e8e8;
 }
 
 .footer-contact {
