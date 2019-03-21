@@ -441,6 +441,15 @@
 
 // подключаем слайдер
 <script src="js/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.slider-customers').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1
+  });
+});
+</script>
 </body>
 
 </html>
