@@ -393,6 +393,29 @@ img {
   cursor: pointer;
 }
 
+.call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.call__phone {
+  display: block;
+  font-size: 17px;
+}
+
+.call__link {
+  color: #23bac1;
+  font-size: 14px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 992px;
@@ -478,24 +501,6 @@ img {
   cursor: pointer;
   border-bottom: 4px solid grey;
   text-decoration: none;
-}
-
-.call {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.call__phone {
-  display: block;
-  font-size: 17px;
 }
 
 .menu__icon {
@@ -785,7 +790,7 @@ img {
   margin-top: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .target {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -817,6 +822,63 @@ img {
 .footer-contact {
   background-color: #191919;
   height: 146px;
+  padding-top: 60px;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-address {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-address__image {
+  margin-right: 19px;
+}
+
+.footer-call__phone {
+  color: #ffffff;
+}
+
+.footer-call__link {
+  font-size: 13px;
+}
+
+@media (max-width: 580px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 50px;
+  }
+  .footer-contact {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-block {
+    margin-left: 20px;
+  }
 }
 
 /* Slider */
