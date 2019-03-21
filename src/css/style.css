@@ -367,6 +367,12 @@ img {
 .section-title {
   font-size: 36px;
   color: #000000;
+  text-align: center;
+}
+
+.section-subtitle {
+  display: block;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -672,13 +678,7 @@ img {
   padding-bottom: 32px;
 }
 
-.layouts__title {
-  text-align: center;
-}
-
 .layouts__subtitle {
-  display: block;
-  text-align: center;
   margin-bottom: 79px;
 }
 
@@ -747,6 +747,42 @@ img {
 
 .projects {
   background-color: #e8e8e8;
+}
+
+.target {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.targets-block {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.targets__subtitle {
+  width: 550px;
+  margin: auto;
+}
+
+.target__text {
+  width: 200px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .footer-contact {
