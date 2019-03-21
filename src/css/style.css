@@ -786,6 +786,20 @@ img {
 }
 
 @media (max-width: 768px) {
+  .target {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .targets__subtitle {
+    width: 470px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 580px) {
   .targets__subtitle {
     width: 270px;
     margin: auto;
