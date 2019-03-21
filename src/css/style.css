@@ -819,6 +819,18 @@ img {
   }
 }
 
+.customers {
+  padding-top: 0;
+}
+
+.customers__subtitle {
+  margin-bottom: 100px;
+}
+
+.slider__image {
+  margin: auto;
+}
+
 .footer-contact {
   background-color: #191919;
   height: 146px;

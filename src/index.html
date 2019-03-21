@@ -389,20 +389,27 @@
         <div class="customers-block">
           <span class="section-subtitle customers__subtitle">Наши клиенты</span>
           <!-- /.subtitle -->
+          <div class="slider">
+          <div class="arrows__left"><img src="img/projects/back.png" alt=""></div>
           <div class="slider-customers">
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
-            <div class="slider-customers__item"><img src="" alt=""></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/gasprom.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/alpha.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/Moscow.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/VTB.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/Lada.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/bentley.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/audi.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/ford.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/honda.jpg" alt="photo"></div>
+            <div class="slider-customers__item"><img class="slider__image" src="img/customers/4x4.jpg" alt="photo"></div>            
           </div>
+          <div class="arrows__right"><img src="img/projects/next.png" alt=""></div>
+        </div>
           <!-- /.slider-customers -->
-            
+            <!-- <div class="arrows customers__arrows">
+              <div class="arrows__left"><img src="img/projects/back.png" alt=""></div>
+              <div class="arrows__right"><img src="img/projects/next.png" alt=""></div>
+            </div> -->
         </div>
         <!-- /.customers-block -->
       </div>
@@ -451,7 +458,32 @@ $(document).ready(function(){
   $('.slider-customers').slick({
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    prevArrow: $('.arrows__left'),
+    nextArrow: $('.arrows__right'),
+    responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1010,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
   });
 });
 </script>
