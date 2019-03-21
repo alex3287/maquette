@@ -785,6 +785,21 @@ img {
   margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .targets__subtitle {
+    width: 270px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 444px) {
+  .targets-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer-contact {
   background-color: #191919;
   height: 146px;
