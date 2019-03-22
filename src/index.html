@@ -363,6 +363,11 @@
                   <!-- .projects-slider__item -->
           </div>
           <!-- /.projects-slider -->
+          <!-- кнопки для слайдера -->
+          <div class="arrows projects__arrows">
+              <div class="parrow__left"><img src="img/projects/back.png" alt=""></div>
+              <div class="parrow__right"><img src="img/projects/next.png" alt=""></div>
+            </div>
         </div>
         <!-- /.projects-block -->
       </div>
@@ -461,7 +466,7 @@
           <span class="section-subtitle customers__subtitle">Наши клиенты</span>
           <!-- /.subtitle -->
           <div class="slider">
-          <!-- <div class="arrows__left"><img src="img/projects/back.png" alt=""></div> -->
+          
           <div class="slider-customers">
             <div class="slider-customers__item"><img class="slider__image" src="img/customers/gasprom.jpg" alt="photo"></div>
             <div class="slider-customers__item"><img class="slider__image" src="img/customers/alpha.jpg" alt="photo"></div>
@@ -474,7 +479,7 @@
             <div class="slider-customers__item"><img class="slider__image" src="img/customers/honda.jpg" alt="photo"></div>
             <div class="slider-customers__item"><img class="slider__image" src="img/customers/4x4.jpg" alt="photo"></div>            
           </div>
-          <!-- <div class="arrows__right"><img src="img/projects/next.png" alt=""></div> -->
+          
         </div>
           <!-- /.slider-customers -->
             <div class="arrows customers__arrows">
@@ -533,8 +538,8 @@
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        //prevArrow: $('.arrows__left'),
-       // nextArrow: $('.arrows__right'),
+        prevArrow: $('.parrow__left'),
+        nextArrow: $('.parrow__right'),
       });
     });
     </script>
