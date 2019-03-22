@@ -939,6 +939,22 @@ img {
   margin-bottom: 100px;
 }
 
+.customers-block {
+  position: relative;
+}
+
+.arrows__left {
+  position: absolute;
+  top: 70%;
+  left: 0;
+}
+
+.arrows__right {
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+
 .slider__image {
   margin: auto;
 }
