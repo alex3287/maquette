@@ -584,7 +584,7 @@ img {
 .hero-list__image {
   width: 35px;
   height: 35px;
-  border: 1px solid  #ff0000;
+  border: 1px solid #ffffff;
   opacity: 0.2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,6 +639,7 @@ img {
   margin-bottom: 15px;
   width: 260px;
   height: 50px;
+  text-align: center;
 }
 
 .hero-form__input:last-child {
@@ -881,6 +882,7 @@ img {
   background-color: rgba(1, 3, 4, 0.98);
   background-image: url("../img/targets/targets-image.png");
   color: #ffffff;
+  padding-bottom: 0;
 }
 
 .targets-block {
@@ -931,10 +933,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.customers {
-  padding-top: 0;
 }
 
 .customers__subtitle {
