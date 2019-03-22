@@ -5,7 +5,6 @@
   &-slider
     // настройка слайдера
     &__card
-      margin-right: 84px
       display: flex
     &__image
       margin-right: 84px
@@ -23,3 +22,38 @@
       position: absolute
       bottom: 0
       left: 0
+
+@media (max-width: 992px)
+  .projects
+    &-slider
+      &__card
+        flex-direction: column
+        width: 400px
+      &__image
+        margin-right: 0
+        margin-bottom: 30px
+      &__item
+        display: flex
+      &__property
+        display: flex
+        justify-content: space-between
+        // высота карточки
+      &__info
+        height: 250px
+
+@media (max-width: 768px)
+  .projects
+    &-slider
+      &__card
+        width: 310px
+      &__image
+        margin-right: 0
+        margin-bottom: 30px
+      &__item
+        display: flex
+      &__property
+        display: flex
+        justify-content: space-between
+        // высота карточки
+      &__info
+        height: 270px
