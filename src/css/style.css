@@ -1161,6 +1161,18 @@ img {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .customers {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .customers {
+    padding-top: 30px;
+  }
+}
+
 .footer-contact {
   background-color: #191919;
   height: 146px;
