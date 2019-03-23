@@ -453,6 +453,12 @@ img {
   font-size: 14px;
 }
 
+.error {
+  border: 1px solid red;
+  color: #ff0000;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 992px;
@@ -702,6 +708,16 @@ img {
 
 .hero-form__input:last-child {
   margin-top: 20px;
+}
+
+.hero-form label {
+  border: none;
+  display: block;
+}
+
+.hero-form__button:active .hero-request__title {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -1233,6 +1249,39 @@ img {
   .footer-block {
     margin-left: 20px;
   }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #23bac1;
 }
 
 /* Slider */

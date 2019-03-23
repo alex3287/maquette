@@ -35,7 +35,7 @@
         <!-- /.menu -->
         <div class="call">
           <span class="call__phone">8 800 891-33-33</span>
-          <a href="#" class="call__link">Заказать обратный звонок</a>
+          <a href="#" class="call__link" id="call_back">Заказать обратный звонок</a>
         </div>
         <!-- /.call -->
       </div>
@@ -95,15 +95,15 @@
           </div>
           <!-- /.information hero__information -->
           <div class="hero-request">
-            <span class="hero-request__title">
+            <span class="hero-request__title" id="form-title">
               Оставьте заявку и получите расчет стоимость макета
               в течение 30 минут
             </span>
-            <form action="" class="hero-form">
-              <input type="text" class="form hero-form__input" placeholder="Ваше имя">
-              <input type="text" class="form hero-form__input" placeholder="Контактный телефон">
-              <input type="text" class="form hero-form__input"placeholder="Электронная почта">
-              <button class="button hero-form__button">Оставить заявку</button>
+            <form action="#" class="hero-form" id="hero-form">
+              <input type="text" name="username" class="form hero-form__input" placeholder="Ваше имя">
+              <input type="text" name="phone" class="form hero-form__input phone" placeholder="Контактный телефон">
+              <input type="text" name="email" class="form hero-form__input"placeholder="Электронная почта">
+              <button class="button hero-form__button" id="button">Оставить заявку</button>
               <!-- /.button hero__button -->
             </form>
             <!-- /.hero-form -->
@@ -544,6 +544,29 @@
   </footer>
   <!-- /.footer -->
 
+  <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+<!-- скрипт меняет свойство у класса для выравнивания элементов -->
+<script>
+$('#button').click(function() {
+    $('#form-title').css({
+        'margin-top': '30px',
+        'margin-buttom': '20px',
+    });
+});
+</script>
+
+
+<!-- скрипт для работы с модальным окном -->
+<script src="js/modal.js"></script>
+
  <!-- подключаем библиотеку jQuery -->
 <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -554,7 +577,6 @@
 <script src="js/slick.min.js"></script>
 
 <!-- // подключаем слайдер для секции наши Реализованные проекты-->
-
 <script>
     $(document).ready(function(){
       $('.projects-slider').slick({
@@ -567,9 +589,50 @@
     });
     </script>
 
+<!-- подключаем плагин для валидации -->
+<script src="js/jquery.validate.min.js"></script>
+<!-- подключаем плагин для маски телефона -->
+<script src="js/jquery.maskedinput.min.js"></script>
+
 <!-- // подключаем слайдер для секции наши клиенты-->
 <script>
 $(document).ready(function(){
+
+  // Валидация формы
+  $('#hero-form').validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      phone: {
+        required: true
+      },
+          email: {
+            required: true,
+            email: true
+          }
+    }
+    ,
+    messages: {
+      username: {
+        required: "Заполните поле",
+        minlength: jQuery.validator.format("Необходимо ввести не менее {0} символов"),
+        maxlength: jQuery.validator.format("Необходимо ввести не более {0} символов")
+      },
+      phone: {
+        required: "Заполните поле"
+      },
+          email: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+          }
+    }
+  });
+  // Маска для телефона
+  $('.phone').mask('+7 (999) 999 99-99')
+  //подключаем слайдер
   $('.slider-customers').slick({
     infinite: true,
     slidesToShow: 5,
