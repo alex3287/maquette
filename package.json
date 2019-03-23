@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/alex3287/maquette#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-tinypng-compress": "^1.2.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
   }
 }
