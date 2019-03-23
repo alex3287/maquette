@@ -35,9 +35,18 @@
   &__list
     font-size: 16px
     padding-left: 0
+    
   &__item
     list-style: none
     margin-bottom: 12px
+    position: relative
+    &:before
+      position: absolute
+      bottom: -10px
+      left: 46%
+      width: 15px
+      border-bottom: 2px solid $bg-button
+      content: ""
   &__button
     position: absolute
     bottom: 40px

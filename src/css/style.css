@@ -819,6 +819,16 @@ img {
 .card__item {
   list-style: none;
   margin-bottom: 12px;
+  position: relative;
+}
+
+.card__item:before {
+  position: absolute;
+  bottom: -10px;
+  left: 46%;
+  width: 15px;
+  border-bottom: 2px solid #23bac1;
+  content: "";
 }
 
 .card__button {
