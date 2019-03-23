@@ -565,6 +565,12 @@ img {
   top: 36px;
 }
 
+@media (max-width: 1200px) {
+  .menu__link {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 992px) {
   .menu__icon {
     display: inline-block;
@@ -636,7 +642,7 @@ img {
 }
 
 .hero__title {
-  width: 540px;
+  max-width: 540px;
   font-size: 48px;
   line-height: 60px;
   margin-top: 0;
