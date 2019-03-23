@@ -20,15 +20,33 @@
   flex-direction: column
   align-items: center
   background-color: $text_2-color
-  border: 1px solid red
   position: relative
   margin-bottom: 30px
+  &:hover
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+    transition: 0.3s
+    .card__button
+      background-color: $bg-button
+      color: $text_2-color
+    .card__img
+      display: none
+    .card__img2
+      display: block
+  &__img2
+    display: none
   &__image
     margin-top: 24px
     margin-bottom: 35px
     width: 300px
   &__text
     width: 234px
+    text-align: center
+  &__list
+    font-size: 16px
+    padding-left: 0
+  &__item
+    list-style: none
+    margin-bottom: 12px
   &__button
     position: absolute
     bottom: 40px
@@ -36,6 +54,7 @@
     width: 230px
     background-color: $text_2-color
     color: $text-color
+      
   &s
     display: flex
     flex-wrap: wrap

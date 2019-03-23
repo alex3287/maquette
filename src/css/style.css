@@ -758,9 +758,32 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  border: 1px solid red;
   position: relative;
   margin-bottom: 30px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover .card__button {
+  background-color: #23bac1;
+  color: #ffffff;
+}
+
+.card:hover .card__img {
+  display: none;
+}
+
+.card:hover .card__img2 {
+  display: block;
+}
+
+.card__img2 {
+  display: none;
 }
 
 .card__image {
@@ -771,6 +794,17 @@ img {
 
 .card__text {
   width: 234px;
+  text-align: center;
+}
+
+.card__list {
+  font-size: 16px;
+  padding-left: 0;
+}
+
+.card__item {
+  list-style: none;
+  margin-bottom: 12px;
 }
 
 .card__button {
