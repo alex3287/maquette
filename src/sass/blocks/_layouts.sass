@@ -60,7 +60,30 @@
     flex-wrap: wrap
     justify-content: space-around
 
+      
+@media (max-width:768px)
+  .layouts
+    padding-top: 0
+    &__title
+      font-size: 30px
+    &__subtitle
+      margin-bottom: 10px
+
+
 @media (max-width: 580px)
+  .layouts
+    &__title
+      font-size: 22px
+      position: relative
+      &:before
+        position: absolute
+        bottom: -10px
+        left: 44%
+        width: 31px
+        border-bottom: 2px solid $bg-button
+        content: ""
+    &__subtitle
+      font-size: 16px
   .card
     width: 280px
     height: 620px

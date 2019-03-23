@@ -863,7 +863,34 @@ img {
       justify-content: space-around;
 }
 
+@media (max-width: 768px) {
+  .layouts {
+    padding-top: 0;
+  }
+  .layouts__title {
+    font-size: 30px;
+  }
+  .layouts__subtitle {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 580px) {
+  .layouts__title {
+    font-size: 22px;
+    position: relative;
+  }
+  .layouts__title:before {
+    position: absolute;
+    bottom: -10px;
+    left: 44%;
+    width: 31px;
+    border-bottom: 2px solid #23bac1;
+    content: "";
+  }
+  .layouts__subtitle {
+    font-size: 16px;
+  }
   .card {
     width: 280px;
     height: 620px;
@@ -985,6 +1012,15 @@ img {
 }
 
 @media (max-width: 768px) {
+  .projects {
+    padding-top: 20px;
+  }
+  .projects__title {
+    font-size: 30px;
+  }
+  .projects__subtitle {
+    margin-bottom: 10px;
+  }
   .projects-slider__card {
     width: 310px;
   }
@@ -1007,6 +1043,24 @@ img {
   }
   .projects-slider__info {
     height: 270px;
+  }
+}
+
+@media (max-width: 580px) {
+  .projects__title {
+    font-size: 22px;
+    position: relative;
+  }
+  .projects__title:before {
+    position: absolute;
+    bottom: -10px;
+    left: 44%;
+    width: 31px;
+    border-bottom: 2px solid #23bac1;
+    content: "";
+  }
+  .projects__subtitle {
+    font-size: 16px;
   }
 }
 

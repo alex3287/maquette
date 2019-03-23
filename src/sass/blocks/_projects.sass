@@ -63,6 +63,11 @@
 
 @media (max-width: 768px)
   .projects
+    padding-top: 20px
+    &__title
+      font-size: 30px
+    &__subtitle
+      margin-bottom: 10px
     &-slider
       &__card
         width: 310px
@@ -77,3 +82,18 @@
         // высота карточки
       &__info
         height: 270px
+
+@media (max-width: 580px)
+  .projects
+    &__title
+      font-size: 22px
+      position: relative
+      &:before
+        position: absolute
+        bottom: -10px
+        left: 44%
+        width: 31px
+        border-bottom: 2px solid $bg-button
+        content: ""
+    &__subtitle
+      font-size: 16px
