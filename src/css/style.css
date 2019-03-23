@@ -395,6 +395,16 @@ img {
   font-size: 36px;
   color: #000000;
   text-align: center;
+  position: relative;
+}
+
+.section-title:before {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 31px;
+  border-bottom: 2px solid #23bac1;
+  content: "";
 }
 
 .section-subtitle {
@@ -738,6 +748,10 @@ img {
 
 .layouts {
   padding-bottom: 32px;
+}
+
+.layouts__title {
+  text-align: center;
 }
 
 .layouts__subtitle {

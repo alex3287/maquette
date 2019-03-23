@@ -15,6 +15,14 @@ img
     font-size: 36px
     color: $text-color
     text-align: center
+    position: relative
+    &:before
+      position: absolute
+      bottom: -10px
+      left: 50%
+      width: 31px
+      border-bottom: 2px solid $bg-button
+      content: ""
   &-subtitle
     display: block
     text-align: center
