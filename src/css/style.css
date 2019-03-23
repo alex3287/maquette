@@ -546,6 +546,10 @@ img {
   text-decoration: none;
 }
 
+.call__phone {
+  font-family: ProximaNova-Bold;
+}
+
 .menu__icon {
   display: none;
   width: 45px;
@@ -1114,8 +1118,10 @@ img {
 
 .targets__subtitle {
   color: #ffffff;
-  width: 550px;
+  max-width: 590px;
   margin: auto;
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-weight: 300;
 }
 
 .target__text {
@@ -1155,6 +1161,8 @@ img {
 
 .customers__subtitle {
   margin-bottom: 100px;
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-weight: 300;
 }
 
 .customers-block {
