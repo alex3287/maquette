@@ -705,6 +705,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 80px;
+  }
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -713,6 +716,14 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .hero__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-left: 5px;
+  }
+  .hero__subtitle {
+    margin-left: 5px;
   }
   .hero-request {
     width: 320px;
@@ -736,10 +747,12 @@ img {
     font-size: 16px;
   }
   .hero__title {
-    font-size: 18px;
+    font-size: 24px;
+    line-height: 20px;
   }
   .hero__subtitle {
-    font-size: 12px;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
   .hero-list__text {
     font-size: 12px;
