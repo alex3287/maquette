@@ -853,10 +853,12 @@ img {
 @media (max-width: 580px) {
   .card {
     width: 280px;
-    height: 530px;
+    height: 620px;
   }
   .card__image {
     width: 250px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .card__button {
     width: 200px;
