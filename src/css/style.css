@@ -900,10 +900,18 @@ img {
   left: 0;
 }
 
+.parrow__left:hover {
+  cursor: pointer;
+}
+
 .parrow__right {
   position: absolute;
   top: 65%;
   right: 0;
+}
+
+.parrow__right:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -913,6 +921,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 400px;
+    margin: auto;
   }
   .projects-slider__image {
     margin-right: 0;

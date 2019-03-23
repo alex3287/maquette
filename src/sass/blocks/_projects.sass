@@ -32,16 +32,21 @@
     position: absolute
     top: 65%
     left: 0
+    &:hover
+      cursor: pointer
   &__right
     position: absolute
     top: 65%
     right: 0
+    &:hover
+      cursor: pointer
 @media (max-width: 992px)
   .projects
     &-slider
       &__card
         flex-direction: column
         width: 400px
+        margin: auto
       &__image
         margin-right: 0
         margin-bottom: 30px
