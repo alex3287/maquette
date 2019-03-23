@@ -1237,6 +1237,10 @@ img {
   font-size: 13px;
 }
 
+.google-map {
+  width: 100%;
+}
+
 @media (max-width: 580px) {
   .footer-block {
     -webkit-box-orient: vertical;
