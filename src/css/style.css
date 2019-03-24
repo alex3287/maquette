@@ -1182,10 +1182,18 @@ input {
   left: 0;
 }
 
+.arrows__left:hover {
+  cursor: pointer;
+}
+
 .arrows__right {
   position: absolute;
   top: 70%;
   right: 0;
+}
+
+.arrows__right:hover {
+  cursor: pointer;
 }
 
 .slider__image {
