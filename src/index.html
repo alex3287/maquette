@@ -34,7 +34,7 @@
         </div>
         <!-- /.menu -->
         <div class="call">
-          <span class="call__phone">8 800 891-33-33</span>
+          <a href="tel:+780089-133-33" class="call__phone">8 800 891-33-33</a>
           <a href="#" class="call__link" id="call_back">Заказать обратный звонок</a>
         </div>
         <!-- /.call -->
@@ -547,7 +547,7 @@
             <p class="footer-address__text">г. Москва, <br> Автомоторная улица, 4А, стр.21</p>
           </div>
           <div class="call footer-call">
-            <span class="call__phone footer-call__phone">8 800 891-33-33</span>
+            <a href="tel:+780089-133-33" class="call__phone footer-call__phone">8 800 891-33-33</span>
             <a href="#" class="call__link footer-call__link">Заказать обратный звонок</a>
           </div>
         </div>
@@ -567,7 +567,7 @@
           Оставьте заявку и получите расчет стоимость макета
           в течение 30 минут
         </span>
-        <form action="#" class="hero-form" id="hero-form">
+        <form action="#" class="hero-form" id="modal-form">
           <input type="text" name="username" class="form hero-form__input" placeholder="Ваше имя">
           <input type="text" name="phone" class="form hero-form__input phone" placeholder="Контактный телефон">
           <input type="text" name="email" class="form hero-form__input" placeholder="Электронная почта">
@@ -576,10 +576,6 @@
       </div>
   </div>
   <!-- /.modal -->
-
-
-
-
 
   <!-- скрипт меняет свойство у класса для выравнивания элементов -->
   <script>
@@ -620,74 +616,9 @@
   <!-- подключаем плагин для маски телефона -->
   <script src="js/jquery.maskedinput.min.js"></script>
 
-  <!-- // подключаем слайдер для секции наши клиенты-->
-  <script>
-    $(document).ready(function () {
-
-      // Валидация формы
-      $('#hero-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true
-          },
-          email: {
-            required: true,
-            email: true
-          }
-        },
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: jQuery.validator.format("Необходимо ввести не менее {0} символов"),
-            maxlength: jQuery.validator.format("Необходимо ввести не более {0} символов")
-          },
-          phone: {
-            required: "Заполните поле"
-          },
-          email: {
-            required: "Заполните поле",
-            email: "Введите корректный email"
-          }
-        }
-      });
-      // Маска для телефона
-      $('.phone').mask('+7 (999) 999 99-99')
-      //подключаем слайдер
-      $('.slider-customers').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
-        responsive: [{
-            breakpoint: 1300,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 1010,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });
+  <!-- // в скрипте ниже реализованна валидация и слайдеры-->
+  <script src="js/main.js">
+    
   </script>
 </body>
 

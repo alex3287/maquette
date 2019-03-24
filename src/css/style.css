@@ -548,6 +548,8 @@ img {
 
 .call__phone {
   font-family: ProximaNova-Bold;
+  text-decoration: none;
+  color: #000000;
 }
 
 .menu__icon {
