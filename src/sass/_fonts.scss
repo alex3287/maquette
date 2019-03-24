@@ -26,9 +26,17 @@
   font-display: auto;
   }
 
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  }
+
 @mixin reg {
   font-family: 'ProximaNova-Regular', sans-serif;
-  font-weight: 400;
+  font-weight: 4;
 }
 
 @mixin light {
@@ -39,4 +47,10 @@
 @mixin bold{
   font-family: 'ProximaNova-Bold', sans-serif;
   font-weight: 400;
+}
+
+@mixin sbold{
+  font-family: 'ProximaNova-Semibold', sans-serif;
+  font-weight: 1;
+  letter-spacing: 0.38px;
 }

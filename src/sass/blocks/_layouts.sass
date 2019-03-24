@@ -1,9 +1,12 @@
 .layouts
   padding-bottom: 32px
   &__title
+    margin-top: 0
+    margin-bottom: 60px
     text-align: center
   &__subtitle
     margin-bottom: 79px
+    margin-bottom: 80px
 .card
   width: 370px
   height: 680px
@@ -23,11 +26,14 @@
       display: none
     .card__img2
       display: block
+  &__title
+    font-size: 20px
+    margin-bottom: 0px
   &__img2
     display: none
   &__image
     margin-top: 24px
-    margin-bottom: 35px
+    margin-bottom: 12px
     width: 300px
   &__text
     width: 234px
@@ -38,15 +44,18 @@
     
   &__item
     list-style: none
-    margin-bottom: 12px
+    margin-bottom: 17px
     position: relative
     &:before
       position: absolute
       bottom: -10px
-      left: 46%
-      width: 15px
+      left: 47%
+      width: 9px
       border-bottom: 2px solid $bg-button
       content: ""
+    &:last-child
+      &:before 
+        display: none
   &__button
     position: absolute
     bottom: 40px
@@ -54,6 +63,7 @@
     width: 230px
     background-color: $text_2-color
     color: $text-color
+    font-size: 13px
       
   &s
     display: flex
