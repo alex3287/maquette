@@ -89,7 +89,8 @@ typings/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -109,3 +110,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# у меня появилась проблема в github из-за этого файла
+package-lock.json

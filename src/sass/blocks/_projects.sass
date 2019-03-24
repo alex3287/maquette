@@ -1,15 +1,16 @@
 .projects
   background-color: $bg-projects
+  padding-bottom: 98px
   &__title
-    
+    margin-top: 0
   &__subtitle
+    margin-top: 65px
     margin-bottom: 99px
   &-slider
     // настройка слайдера
     &__card
       display: flex
-      margin-left: 40px
-      
+      margin-left: 135px   
     &__image
       margin-right: 84px
       width: 409px
@@ -23,8 +24,21 @@
       position: relative
     &__title
       margin-top: 0
+      margin-bottom: 48px
+      font-size: 24px
+    &__text
+      font-size: 12px
+    &__subtitle
+      margin-top: 12px
+      margin-bottom: 40px
+      font-size: 16px
+    &__scale, &__size, &__time
+      font-size: 12px
+    &__data
+      font-size: 16px
     &__button
       position: absolute
+      width: 216px
       bottom: 0
       left: 0
   &-block
@@ -32,13 +46,13 @@
 .parrow
   &__left
     position: absolute
-    top: 65%
+    top: 67%
     left: 0
     &:hover
       cursor: pointer
   &__right
     position: absolute
-    top: 65%
+    top: 67%
     right: 0
     &:hover
       cursor: pointer

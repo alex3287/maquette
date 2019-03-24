@@ -408,7 +408,7 @@ img {
 
 .section-title:before {
   position: absolute;
-  bottom: -20px;
+  bottom: -27px;
   left: 48.5%;
   width: 31px;
   border-bottom: 2px solid #23bac1;
@@ -812,7 +812,7 @@ button {
 }
 
 .layouts {
-  padding-bottom: 32px;
+  padding-bottom: 0;
 }
 
 .layouts__title {
@@ -974,9 +974,15 @@ button {
 
 .projects {
   background-color: #e8e8e8;
+  padding-bottom: 98px;
+}
+
+.projects__title {
+  margin-top: 0;
 }
 
 .projects__subtitle {
+  margin-top: 65px;
   margin-bottom: 99px;
 }
 
@@ -984,7 +990,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 40px;
+  margin-left: 135px;
 }
 
 .projects-slider__image {
@@ -1013,10 +1019,31 @@ button {
 
 .projects-slider__title {
   margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 24px;
+}
+
+.projects-slider__text {
+  font-size: 12px;
+}
+
+.projects-slider__subtitle {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.projects-slider__scale, .projects-slider__size, .projects-slider__time {
+  font-size: 12px;
+}
+
+.projects-slider__data {
+  font-size: 16px;
 }
 
 .projects-slider__button {
   position: absolute;
+  width: 216px;
   bottom: 0;
   left: 0;
 }
@@ -1027,7 +1054,7 @@ button {
 
 .parrow__left {
   position: absolute;
-  top: 65%;
+  top: 67%;
   left: 0;
 }
 
@@ -1037,7 +1064,7 @@ button {
 
 .parrow__right {
   position: absolute;
-  top: 65%;
+  top: 67%;
   right: 0;
 }
 
@@ -1163,14 +1190,17 @@ button {
 
 .targets__subtitle {
   color: #ffffff;
-  max-width: 590px;
+  max-width: 680px;
   margin: auto;
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: 10px;
   font-family: 'ProximaNova-Light', sans-serif;
   font-weight: 300;
 }
 
 .target__text {
-  width: 200px;
+  width: 250px;
   text-align: center;
   margin-top: 30px;
 }
@@ -1204,8 +1234,14 @@ button {
   }
 }
 
+.customers {
+  padding-bottom: 185px;
+}
+
 .customers__subtitle {
   margin-bottom: 100px;
+  font-size: 24px;
+  line-height: 22px;
   font-family: 'ProximaNova-Light', sans-serif;
   font-weight: 300;
 }
