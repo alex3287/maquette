@@ -973,7 +973,7 @@ button {
 
 @media (max-width: 768px) {
   .layouts {
-    padding-top: 0;
+    padding-top: 30px;
   }
   .layouts__title {
     font-size: 30px;
@@ -1142,13 +1142,13 @@ button {
             justify-content: space-between;
   }
   .projects-slider__info {
-    height: 250px;
+    height: 320px;
   }
 }
 
 @media (max-width: 768px) {
   .projects {
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .projects__title {
     font-size: 30px;
@@ -1177,7 +1177,7 @@ button {
             justify-content: space-between;
   }
   .projects-slider__info {
-    height: 270px;
+    height: 305px;
   }
 }
 
