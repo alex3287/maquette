@@ -533,6 +533,10 @@ img {
           align-items: center;
 }
 
+.navbar-burger {
+  height: 140px;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,39 +569,85 @@ img {
   color: #000000;
 }
 
-.menu__icon {
+.call__back2 {
   display: none;
-  width: 45px;
-  height: 35px;
-  position: relative;
-  cursor: pointer;
 }
 
-.menu__icon span {
+.menu .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-btn {
   display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  position: relative;
+}
+
+.menu-btn__top {
+  margin-top: 5px;
+}
+
+.menu-btn__top2 {
+  margin-top: -65px;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
   position: absolute;
-  height: 5px;
-  width: 100%;
-  background: #333333;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
 }
 
-.menu__icon span:nth-child(1) {
-  top: 10px;
+.menu-btn span:before, .menu-btn span:after {
+  content: '';
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
-  top: 23px;
+.menu-btn span:before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
-.menu__icon span:nth-child(4) {
-  top: 36px;
+.menu-btn span:after {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.menu-btn_active span {
+  height: 0;
+}
+
+.menu-btn_active span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-btn_active span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu-burger {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -607,21 +657,14 @@ img {
 }
 
 @media (max-width: 992px) {
-  .menu__icon {
-    display: inline-block;
-  }
-  .menu__item {
-    position: fixed;
-    display: block;
-    right: 0;
-    left: 0;
-    margin-top: 52px;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    overflow: auto;
-  }
-  .menu__link {
+  .menu__list {
     display: none;
+  }
+  .menu__list2 {
+    display: block;
+  }
+  .menu-burger {
+    display: block;
   }
 }
 

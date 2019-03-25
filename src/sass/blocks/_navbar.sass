@@ -12,6 +12,9 @@
     display: flex
     justify-content: space-between
     align-items: center
+  &-burger
+    height: 140px
+    
 .menu
   &__list
     display: flex
@@ -34,70 +37,69 @@
     font-family: ProximaNova-Bold
     text-decoration: none
     color: $text-color
-      // тут начинается бургер меню
-.menu__icon 
+  &__back2  // для скрытия при вызове меню
     display: none
-    width: 45px
-    height: 35px
-    position: relative
-    cursor: pointer
-
-
-.menu__icon span 
+// тут начинается бургер меню
+.menu
+  .burger
+    display: flex
+    justify-content: center
+    align-items: center
+.menu-btn
+  display: block
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background-color: #cccccc
+  position: relative
+  &__top
+    margin-top: 5px
+  &__top2
+    margin-top: -65px
+.menu-btn span, 
+.menu-btn span:before,
+.menu-btn span:after,
+  position: absolute
+  top: 50% 
+  margin-top: -1px
+  left: 50%
+  margin-left: -10px
+  width: 20px
+  height: 2px
+  background-color: #222
+.menu-btn span
+  &:before, &:after
+    content: ''
     display: block
-    position: absolute
-    height: 5px
-    width: 100%
-    background: #333333
-    border-radius: 9px
-    opacity: 1
-    left: 0
-    transform: rotate(0deg)
-    transition: .25s ease-in-out
+    transition: 0.2s
+.menu-btn span
+  &:before
+    transform: translateY(-5px)
+  &:after
+    transform: translateY(5px)
 
+.menu-btn_active span
+  height: 0
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(-45deg)
 
-.menu__icon span:nth-child(1) 
-    top: 10px
+.menu-burger
+  display: none
 
-
-.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) 
-    top: 23px
-
-
-.menu__icon span:nth-child(4) 
-    top: 36px
-
-
+// тут уменьшаю шрифты
 @media (max-width: 1200px)
   .menu
     &__link
       font-size: 12px
 
 @media (max-width: 992px)
-  .menu__icon
-    display: inline-block
-  
-  .menu__item 
-    position: fixed
-    display: block
-    top: 
-    right: 0
-    left: 0
-    margin-top: 52px
-    background-color: rgba(0, 0, 0, 0.8)
-    z-index: 1000
-    overflow: auto
-  
-  .menu__link
-    display: none
-    // display: block
-    // padding: 10px 0
-    // text-align: center
-    // color: #ffffff
-
-
-@media (max-width:580px)
-  .navbar
-      &-block
-        //flex-direction: column
-        
+  .menu
+    &__list
+      display: none
+    &__list2
+      display: block
+    &-burger
+     display: block
+   

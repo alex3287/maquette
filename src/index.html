@@ -12,28 +12,26 @@
 </head>
 
 <body>
+  
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
         <!-- это мне нужно для бургер меню -->
-        <div class="menu">
-          <div class="menu__icon">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="menu-burger">
+          <div class="menu-btn menu-btn__top">
             <span></span>
           </div>
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#home" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a href="#layouts" class="menu__link">Виды макетов</a></li>
-            <li class="menu__item"><a href="#equipment" class="menu__link">Комплектация макетов</a></li>
-            <li class="menu__item"><a href="#projects" class="menu__link">Реализованные проекты</a></li>
-            <li class="menu__item"><a href="#customers" class="menu__link">Наши клиенты</a></li>
-            <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
-          </ul>
         </div>
+          <ul class="menu__list">
+              <li class="menu__item"><a href="#home" class="menu__link">Главная</a></li>
+              <li class="menu__item"><a href="#layouts" class="menu__link">Виды макетов</a></li>
+              <li class="menu__item"><a href="#equipment" class="menu__link">Комплектация макетов</a></li>
+              <li class="menu__item"><a href="#projects" class="menu__link">Реализованные проекты</a></li>
+              <li class="menu__item"><a href="#customers" class="menu__link">Наши клиенты</a></li>
+              <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+            </ul>
         <!-- /.menu -->
-        <div class="call">
+        <div class="call call__back">
           <a href="tel:+780089-133-33" class="call__phone">8 800 891-33-33</a>
           <a href="#" class="call__link" id="call_back">Заказать обратный звонок</a>
         </div>
@@ -615,9 +613,21 @@
   <script src="js/jquery.maskedinput.min.js"></script>
 
   <!-- // в скрипте ниже реализованна валидация и слайдеры-->
-  <script src="js/main.js">
-    
-  </script>
+  <script src="js/main.js"> </script>
+
+  <!-- скрипт для бургер меню для замены различных классов-->
+  <script>
+      $('.menu-btn').on('click', function(e){
+        e.preventDefault;
+        $(this).toggleClass('menu-btn_active');
+        $('.navbar').toggleClass('navbar-burger');
+        $('.menu__list').toggleClass('menu__list2');
+        $('.call__back').toggleClass('call__back2');
+        $('.menu-btn__top').toggleClass('menu-btn__top2');
+        
+      }); 
+      </script>
+
 </body>
 
 </html>
