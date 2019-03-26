@@ -1072,6 +1072,7 @@ input {
 
 .projects-slider__text {
   font-size: 12px;
+  color: #7f7f7f;
 }
 
 .projects-slider__subtitle {
@@ -1082,6 +1083,7 @@ input {
 
 .projects-slider__scale, .projects-slider__size, .projects-slider__time {
   font-size: 12px;
+  color: #7f7f7f;
 }
 
 .projects-slider__data {
