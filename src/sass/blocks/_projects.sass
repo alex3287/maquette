@@ -80,6 +80,7 @@
 @media (max-width: 768px)
   .projects
     padding-top: 30px
+    padding-bottom: 30px
     &__title
       font-size: 30px
     &__subtitle
@@ -113,3 +114,30 @@
         content: ""
     &__subtitle
       font-size: 16px
+    &-slider
+      &__title
+        font-size: 18px
+      &__subtitle
+        font-size: 14px
+        //width: 280px
+      &__scale, &__size, &__time
+        font-size: 10px
+      &__data
+        font-size: 14px
+      &__property
+        justify-content: flex-start
+      &__first
+        margin-right: 20px
+      &__second
+        margin-right: 20px
+    &-block
+      position: relative
+  .parrow
+    &__left
+      position: absolute
+      top: 64%
+      left: 0
+    &__right
+      position: absolute
+      top: 64%
+      right: 0
