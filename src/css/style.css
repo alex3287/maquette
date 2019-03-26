@@ -1406,6 +1406,11 @@ input {
   .footer-contact {
     padding-top: 10px;
   }
+  .footer-call {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @media (max-width: 380px) {
