@@ -932,6 +932,10 @@ input {
   padding-left: 0;
 }
 
+.card__button {
+  border: 1px solid #aeaeae;
+}
+
 .card__item {
   list-style: none;
   margin-bottom: 17px;
