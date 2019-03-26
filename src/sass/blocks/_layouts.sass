@@ -72,7 +72,11 @@
     flex-wrap: wrap
     justify-content: space-around
 
-      
+@media (max-width:822px)
+  .card
+    &:last-child
+          height: 530px
+
 @media (max-width:768px)
   .layouts
     padding-top: 30px
@@ -98,8 +102,12 @@
     &__subtitle
       font-size: 16px
   .card
+    &__title
+      margin-bottom: 20px
     width: 280px
-    height: 620px
+    height: 590px
+    &:last-child
+      height: 480px
     &__image
       width: 250px
       margin-bottom: 0
