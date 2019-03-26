@@ -1175,6 +1175,9 @@ input {
     display: -ms-flexbox;
     display: flex;
   }
+  .projects-slider__subtitle {
+    margin-bottom: 20px;
+  }
   .projects-slider__property {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1226,6 +1229,9 @@ input {
   }
   .projects-slider__second {
     margin-right: 20px;
+  }
+  .projects-slider__info {
+    height: 295px;
   }
   .projects-block {
     position: relative;
