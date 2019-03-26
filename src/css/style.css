@@ -709,8 +709,7 @@ input {
 .hero-list__image {
   width: 35px;
   height: 35px;
-  border: 1px solid #ffffff;
-  opacity: 0.2;
+  border: 1px solid #555555;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
