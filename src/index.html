@@ -102,7 +102,7 @@
               <input type="text" name="username" class="form hero-form__input" placeholder="Ваше имя">
               <input type="text" name="phone" class="form hero-form__input phone" placeholder="Контактный телефон">
               <input type="text" name="email" class="form hero-form__input" placeholder="Электронная почта">
-              <button class="button hero-form__button" onclick="ym(52981663, 'reachGoal', 'button'); return true;"id="button">Оставить заявку</button>
+              <button class="button hero-form__button" onclick="ym(52981663, 'reachGoal', 'button'); return true; "id="button">Оставить заявку</button>
               <!-- /.button hero__button -->
             </form>
             <!-- /.hero-form -->
@@ -625,6 +625,15 @@
         $('.menu__list').toggleClass('menu__list2');
         $('.call__back').toggleClass('call__back2');
         $('.menu-btn__top').toggleClass('menu-btn__top2');
+        
+      }); 
+  </script>
+
+  <!-- скрипт для увеличения окна в hero -->
+  <script>
+      $('#button').on('click', function(){
+        $('.hero-request').css("height","470px");
+         //$('.section-block').toggleClass('df');
         
       }); 
   </script>
