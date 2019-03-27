@@ -1364,8 +1364,8 @@ input {
   margin-bottom: 100px;
   font-size: 24px;
   line-height: 22px;
-  font-family: 'ProximaNova-Light', sans-serif;
-  font-weight: 300;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 4;
 }
 
 .customers-block {
@@ -1394,6 +1394,15 @@ input {
 
 .slider__image {
   margin: auto;
+  outline: none;
+}
+
+.button:active, button:focus {
+  outline: none !important;
+}
+
+.button::-moz-focus-inner {
+  border: 0 !important;
 }
 
 @media (max-width: 768px) {
